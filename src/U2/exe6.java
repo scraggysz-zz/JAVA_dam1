@@ -1,7 +1,6 @@
 void main() {
     String clase = IO.readln("Elige tu clase (guerrero, mago, arquero, cazador, ladrón): ").toLowerCase();
     String habilidad;
-
     if (clase.equals("guerrero")) {
         habilidad = "Golpe sísmico: daño masivo en área";
     } else if (clase.equals("mago")) {

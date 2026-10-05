@@ -16,11 +16,11 @@ void main() {
 //            print("*");
 //        }
 //    }
-    int d = Integer.parseInt(readln("introduïx alçada: "));
-    for (int g=1;g<=d;g++) {
-        println();
-        for (int h=d;h>g;h--) {
-            print("*");
-        }
-    }
+//    int d = Integer.parseInt(readln("introduïx alçada: "));
+//    for (int g=1;g<=d;g++) {
+//        println();
+//        for (int h=d;h>g;h--) {
+//            print("*");
+//        }
+//    }
 }

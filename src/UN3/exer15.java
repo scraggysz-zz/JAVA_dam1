@@ -26,15 +26,23 @@ void main() {
         println();
     }
     println();
+    int ei = 0;
+    int eb = 0;
+    int ti = 0;
+    int tb = 0;
     for (int i=0;i<a.length;i++) {
         for (int b=0;b<a.length;b++) {
              if (i==5 && b==(a.length-5)) {
-                println("Entrada: "+"("+i+","+b+")");
+                 ei = i;
+                 eb = b;
             }
             else if (i==4 && b==(a.length-3)) {
-                println("Tresor: "+"("+i+","+b+")");
+                 ti = i;
+                 tb = b;
             }
         }
     }
+    println("Entrada: "+"("+ei+","+eb+")");
+    println("Tresor: "+"("+ti+","+tb+")");
     println("Total parets: "+c);
 }

@@ -9,8 +9,8 @@ void main() {
     IO.println("Part numèrica: %s".formatted(numseparat));
     IO.println("Part alfabètica: %s".formatted(lletres.toUpperCase()));
     IO.print("Lletres en ordre invers: ");
-    for (int i=0;i<3;i++) {
-        IO.print("");
+    for (int i = 2; i >= 0; i--) {
+        IO.print(lletres.substring(i, i+1).toUpperCase());
     }
-    IO.println("Matrícula completa: "+numseparat+"-"+lletres.toUpperCase());
+    IO.println("\nMatrícula completa: "+numseparat+"-"+lletres.toUpperCase());
 }

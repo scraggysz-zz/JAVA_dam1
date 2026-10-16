@@ -7,14 +7,15 @@ void main() {
     IO.print("Quantitat: ");
     int quantitat = scanner.nextInt();
     double iva = preu*quantitat*0.21;
-    IO.println("\n" +
-            "=========== TIQUET DE COMPRA ===========\n" +
-            "Article:         %-15s\n".formatted(nom) +
-            "Unitats:                            %3d\n".formatted(quantitat) +
-            "Preu unitari:                 %8.2f €\n".formatted(preu) +
-            "----------------------------------------\n" +
-            "Subtotal:                     %8.2f €\n".formatted(preu*quantitat) +
-            "IVA:                     %8.2f €\n".formatted(iva) +
-            "TOTAL A PAGAR:               %8.2f €\n".formatted((iva)+preu*quantitat) +
-            "========================================");
+    IO.println("""                    
+            =========== TIQUET DE COMPRA ===========
+            Article:                           %-15s
+            Unitats:                             %3d
+            Preu unitari:                    %8.2f €
+            ----------------------------------------
+            Subtotal:                        %8.2f €
+            IVA (21%%):                      %8.2f €
+            TOTAL A PAGAR:                   %8.2f €
+            ========================================
+            """.formatted(nom, quantitat, preu, quantitat*preu, iva, (iva)+preu*quantitat));
 }

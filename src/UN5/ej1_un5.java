@@ -1,7 +1,8 @@
 import static java.lang.IO.*;
 void main() {
     Scanner scanner = new Scanner(System.in);
-    int[] notas = new int[10];
+    int n = scanner.nextInt();
+    int[] notas = new int[n];
     for (int i=0;i<notas.length;i++) {
         notas[i] = scanner.nextInt();
     }
